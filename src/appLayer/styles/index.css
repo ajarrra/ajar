@@ -1,5 +1,27 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import './variables.css';
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@800&family=Montserrat:ital,wght@0,500;1,400&family=Rubik&display=swap');
+
+html,
+body {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--text-grey-color);
+	border-radius: 20px;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1380px;
+}
+
+main {
+	min-height: 100%;
 }
